@@ -1,0 +1,31 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,8.0.8*%
+%TF.CreationDate,2025-02-06T20:07:43-05:00*%
+%TF.ProjectId,flashlight-led,666c6173-686c-4696-9768-742d6c65642e,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Copper,L2,Bot*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.8) date 2025-02-06 20:07:43*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,ComponentPad*%
+%ADD10C,3.000000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+%TO.P,J3,1,Pin_1*%
+%TO.N,GND*%
+X148710000Y-104170000D03*
+%TD*%
+%TO.P,J2,1,Pin_1*%
+%TO.N,GND*%
+X173830000Y-104170000D03*
+%TD*%
+%TO.P,J1,1,Pin_1*%
+%TO.N,+18V*%
+X161270000Y-82420000D03*
+%TD*%
+M02*
