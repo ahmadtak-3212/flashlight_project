@@ -9,4 +9,6 @@
   (lib (name "BISTOOK_BATTERY_HOLDER_21700")(type "KiCad")(uri "${KIPRJMOD}/libs/BISTOOK_BATTERY_HOLDER_21700.pretty")(options "")(descr ""))
   (lib (name "MMA8451QR1")(type "KiCad")(uri "${KIPRJMOD}/libs/MMA8451QR1")(options "")(descr ""))
   (lib (name "19-237_R6GHBHC-A01_2T")(type "KiCad")(uri "${KIPRJMOD}/libs/19-237_R6GHBHC-A01_2T")(options "")(descr ""))
+  (lib (name "MMA8452QR1")(type "KiCad")(uri "${KIPRJMOD}/libs/MMA8452QR1")(options "")(descr ""))
+  (lib (name "LED-SMD_4P-L1.6-W1.6-BR-RD")(type "KiCad")(uri "${KIPRJMOD}/libs/LED-SMD_4P-L1.6-W1.6-BR-RD")(options "")(descr ""))
 )
