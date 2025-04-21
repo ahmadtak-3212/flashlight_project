@@ -12210,16 +12210,6 @@
 		)
 		(uuid "1957c893-1160-431a-b934-bcd0ce8b9ef4")
 	)
-	(text "note STM32L151CC supports dfu not stm32L151C8"
-		(exclude_from_sim no)
-		(at 329.692 189.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "27a1a3da-3c9c-42f0-b5ce-12fc99cb7cf4")
-	)
 	(text "HEADERS"
 		(exclude_from_sim no)
 		(at 319.786 203.708 0)
