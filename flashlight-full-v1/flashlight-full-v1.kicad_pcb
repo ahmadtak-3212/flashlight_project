@@ -7722,7 +7722,7 @@
 		(uuid "5afcf7b1-62fb-4ffb-b17d-bea834963bf3")
 		(at 100.965 92.8624)
 		(property "Reference" "U6"
-			(at 0.254 2.3876 180)
+			(at 2.9464 1.1938 180)
 			(layer "F.SilkS")
 			(uuid "939cc2df-351c-4438-9a49-4e2857a97eb5")
 			(effects
