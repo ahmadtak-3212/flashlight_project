@@ -1,0 +1,1961 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
+	(paper "A4")
+	(title_block
+		(title "SENSOR - TEMPERATURE")
+		(date "2025-04-26")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
+	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sensor_Temperature:TMP102xxDRL"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -2.54 10.795 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "TMP102xxDRL"
+				(at -2.54 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
+				(at 1.27 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp102.pdf"
+				(at 1.27 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Digital Temperature Sensor, ±3°C, low-Power, SMBus, 12 bit, Two-Wire Serial Interface, SOT-563"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "digital temperature sensor i2c smbus"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?563*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TMP102xxDRL_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TMP102xxDRL_1_1"
+				(polyline
+					(pts
+						(xy 2.413 -0.635) (xy 3.048 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 0) (xy 3.048 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 0.635) (xy 3.048 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 1.27) (xy 3.048 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 1.905) (xy 2.413 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 1.905) (xy 3.048 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 1.905) (xy 3.683 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.048 -3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 3.683 -3.175)
+					(end 2.413 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 3.683 1.905)
+					(mid 3.048 2.5373)
+					(end 2.413 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "ALERT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "ADD0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+2V5"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+2V5"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+2V5\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+2V5_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+2V5_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 147.32 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13b1ce13-cbe4-42a9-8f66-6d99c4f9c823")
+	)
+	(junction
+		(at 125.73 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41b02824-62f8-4a88-9496-f0a63d4659b6")
+	)
+	(junction
+		(at 125.73 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b142e944-9a86-4aa8-912f-18afa242ff1a")
+	)
+	(junction
+		(at 147.32 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be11f2bb-7cdb-4152-9bf1-c1c5835ef20b")
+	)
+	(bus_entry
+		(at 228.6 64.77)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d177b2c-e94b-4da2-8422-26e1b39c7606")
+	)
+	(bus_entry
+		(at 228.6 68.58)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a98863a9-c67c-48c8-ad6b-31fd60028c90")
+	)
+	(wire
+		(pts
+			(xy 147.32 92.71) (xy 147.32 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03bfa716-6258-4500-bdd4-84841658d9fa")
+	)
+	(wire
+		(pts
+			(xy 111.76 100.33) (xy 115.57 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c8e4e90-3dd4-41e3-abf1-73efb258ada3")
+	)
+	(wire
+		(pts
+			(xy 125.73 111.76) (xy 111.76 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c20d063-6d92-42f1-957c-b7914aeb8e91")
+	)
+	(wire
+		(pts
+			(xy 163.83 73.66) (xy 163.83 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e705957-5f81-4461-9516-1c2bcbfa4618")
+	)
+	(wire
+		(pts
+			(xy 125.73 120.65) (xy 125.73 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "270def0a-7071-43f7-bf8f-94a26b7d937b")
+	)
+	(wire
+		(pts
+			(xy 109.22 92.71) (xy 115.57 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2930d125-c7ce-4bfe-bb14-8432028bf129")
+	)
+	(wire
+		(pts
+			(xy 125.73 69.85) (xy 125.73 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "352cddc0-83d8-4c7a-bf72-36a9ff228a7c")
+	)
+	(bus
+		(pts
+			(xy 228.6 59.69) (xy 228.6 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42786d32-1098-4994-9d4c-41c38682b2fa")
+	)
+	(bus
+		(pts
+			(xy 228.6 68.58) (xy 228.6 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fb19088-be99-4802-b190-9f7cb65deb23")
+	)
+	(bus
+		(pts
+			(xy 228.6 59.69) (xy 232.41 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6020e627-c70e-4c85-bf9c-2c25f88986e9")
+	)
+	(wire
+		(pts
+			(xy 163.83 85.09) (xy 163.83 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c690547-7b82-4001-b04a-4e718a171345")
+	)
+	(wire
+		(pts
+			(xy 125.73 111.76) (xy 125.73 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e52dd62-e949-4004-aca6-ffac1c68ece1")
+	)
+	(wire
+		(pts
+			(xy 125.73 73.66) (xy 147.32 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96b9e692-6914-4c87-b597-15f9a389e3f6")
+	)
+	(wire
+		(pts
+			(xy 147.32 73.66) (xy 163.83 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f118529-b916-47b6-8dc1-b6eeb4f3d9de")
+	)
+	(wire
+		(pts
+			(xy 111.76 111.76) (xy 111.76 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7f4d4cb-1b95-49f2-879c-57f7ed7523c6")
+	)
+	(wire
+		(pts
+			(xy 217.17 67.31) (xy 226.06 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1286cf7-2da0-4ae9-90f1-ad7f4aa99ded")
+	)
+	(bus
+		(pts
+			(xy 228.6 64.77) (xy 228.6 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6aa6aa1-54cb-4a05-8078-edf90bed299a")
+	)
+	(bus
+		(pts
+			(xy 232.41 55.88) (xy 238.76 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce6d7127-dbb2-413b-969f-cb3f50000f68")
+	)
+	(wire
+		(pts
+			(xy 217.17 71.12) (xy 226.06 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d19bd749-cd7a-494d-93b3-eb76f3470edb")
+	)
+	(wire
+		(pts
+			(xy 147.32 77.47) (xy 147.32 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d59e12ca-752b-4368-bd69-84fd00872d18")
+	)
+	(wire
+		(pts
+			(xy 135.89 92.71) (xy 147.32 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5a7bcc1-5db6-4580-bc58-e1f7ce920b37")
+	)
+	(wire
+		(pts
+			(xy 147.32 92.71) (xy 152.4 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da8f97ce-4954-4425-808b-91d5f175fa78")
+	)
+	(wire
+		(pts
+			(xy 109.22 95.25) (xy 115.57 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec1b75a0-d1b0-448c-8a28-654e227faf7b")
+	)
+	(wire
+		(pts
+			(xy 125.73 73.66) (xy 125.73 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f23f5239-19c6-4660-9fb7-5029daa723d7")
+	)
+	(rectangle
+		(start 46.99 43.18)
+		(end 196.85 149.86)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 24bb09b5-7b6f-48da-8d3f-50255d75257d)
+	)
+	(rectangle
+		(start 203.2 43.18)
+		(end 252.73 92.71)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8c9c69cb-5d2d-405b-a06f-4c0e851dc26c)
+	)
+	(rectangle
+		(start 51.435 46.355)
+		(end 109.855 64.77)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 950ee27d-1400-450a-8abc-2fd099ddeff1)
+	)
+	(image
+		(at 80.645 55.245)
+		(scale 0.393988)
+		(uuid "772fdbfc-90cd-4107-b3a3-4a52656fe93d")
+		(data "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"
+		)
+	)
+	(text_box "I2C"
+		(exclude_from_sim no)
+		(at 204.47 83.82 0)
+		(size 46.99 7.62)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "40887cf6-271a-486e-a119-7f4cb92da2fb")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 93.98 20.32 0)
+		(size 96.52 12.7)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 8 8)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "524c500e-48b2-4d74-9c30-5c34bf6c2558")
+	)
+	(text_box "LAYOUT NOTE:\nMake sure to check datasheet for orientation for silkscreen"
+		(exclude_from_sim no)
+		(at 50.8 125.73 0)
+		(size 30.48 20.32)
+		(stroke
+			(width 1.5)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "b6a86a2c-1f4c-4a0d-97bf-ccc7dd6aa36c")
+	)
+	(text_box "MMA8452QR1 ACCELEROMETER"
+		(exclude_from_sim no)
+		(at 48.26 140.97 0)
+		(size 146.05 7.62)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "ebbdcfd2-c588-4cc6-97a4-0bbffef9cb5f")
+	)
+	(text_box "DESIGN NOTE:\nPullups for I2C are on MCU page"
+		(exclude_from_sim no)
+		(at 50.8 100.33 0)
+		(size 30.48 20.32)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "f5254720-e489-4786-8703-5d23036252e1")
+	)
+	(text "TMP102 Datasheet"
+		(exclude_from_sim no)
+		(at 147.955 167.64 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://www.ti.com/lit/ds/symlink/tmp102.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1745591030031&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftmp102")
+		)
+		(uuid "4326293e-06e2-456f-a22b-31d9685f2f76")
+	)
+	(label "SCL"
+		(at 109.22 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "38ae8a08-7032-49c5-8f83-57114f1026e5")
+	)
+	(label "SDA"
+		(at 217.17 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b91ef47-fac0-499b-a164-f5e06b54e582")
+	)
+	(label "SDA"
+		(at 109.22 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4a9c50c-09eb-424a-9138-6d39743a6490")
+	)
+	(label "SCL"
+		(at 217.17 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cbf946b1-063a-4efe-b2af-4242c1d07048")
+	)
+	(hierarchical_label "ALERT"
+		(shape output)
+		(at 152.4 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a25a8aee-3143-4389-9dc5-21d8ecbbffd6")
+	)
+	(hierarchical_label "{I2C}"
+		(shape bidirectional)
+		(at 238.76 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b84e7467-e2b3-42b8-847a-291aec09e7a5")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 125.73 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28509065-6717-48b4-a56b-473ae0543a4d")
+		(property "Reference" "#PWR046"
+			(at 125.73 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 123.444 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 125.73 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ab8f4ff-669f-4987-a983-f04d4e941297")
+		)
+		(instances
+			(project "flashlight-full-v1-1"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6953cb0-2713-480f-9476-7b1d8e288fbe"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 147.32 81.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ebf113b-1f07-49d6-b0ed-013ec1aeb87d")
+		(property "Reference" "RU101"
+			(at 140.97 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 141.732 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 146.304 81.026 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 147.32 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 149.86 83.312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "116cc491-0318-47db-9899-4e25afda348f")
+		)
+		(pin "1"
+			(uuid "22f438b9-7c66-49c7-91a7-2a8949def859")
+		)
+		(instances
+			(project "flashlight-full-v1-1"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6953cb0-2713-480f-9476-7b1d8e288fbe"
+					(reference "RU101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 163.83 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dedd03e5-7567-4f04-9391-72b3fece2e62")
+		(property "Reference" "CU101"
+			(at 156.21 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 156.21 82.5562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 163.83 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 163.83 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 155.956 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2f5c648-cf68-4c40-9f4f-c565403d44c1")
+		)
+		(pin "2"
+			(uuid "87eaa770-5ae0-4044-a9b9-0014fe3afc91")
+		)
+		(instances
+			(project "flashlight-full-v1-1"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6953cb0-2713-480f-9476-7b1d8e288fbe"
+					(reference "CU101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+2V5")
+		(at 125.73 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e61e1fcc-2edc-438d-ba3f-095e9332debf")
+		(property "Reference" "#PWR047"
+			(at 125.73 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+2V5"
+			(at 125.73 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+			(at 125.73 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25a7de8b-bda4-4bdf-a39a-dc969a40194d")
+		)
+		(instances
+			(project "flashlight-full-v1-1"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6953cb0-2713-480f-9476-7b1d8e288fbe"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 163.83 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ece65f97-3cb3-4d9a-aa4a-d50854cbda69")
+		(property "Reference" "#PWR048"
+			(at 163.83 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a958ebe0-d4d6-45f3-805f-3127aa1e2d3d")
+		)
+		(instances
+			(project "flashlight-full-v1-1"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6953cb0-2713-480f-9476-7b1d8e288fbe"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:TMP102xxDRL")
+		(at 125.73 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f600fdf2-bd4e-4f02-9b34-a9f2c8d2f268")
+		(property "Reference" "U10"
+			(at 115.57 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMP102xxDRL"
+			(at 115.57 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
+			(at 127 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp102.pdf"
+			(at 127 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Digital Temperature Sensor, ±3°C, low-Power, SMBus, 12 bit, Two-Wire Serial Interface, SOT-563"
+			(at 125.73 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "81547f31-37c0-442b-ac0d-4cbf7d54d785")
+		)
+		(pin "4"
+			(uuid "2c3a4f5f-7c56-466b-b20a-015880dcd91b")
+		)
+		(pin "6"
+			(uuid "1f830bc8-fdf8-41db-918e-161bbedbf104")
+		)
+		(pin "3"
+			(uuid "be0e7995-4960-4dec-b48c-5f03f0573a83")
+		)
+		(pin "5"
+			(uuid "75899ea2-f2be-457d-bd20-938b22b628d2")
+		)
+		(pin "1"
+			(uuid "41bb91e8-592a-4e18-9cce-4857898af418")
+		)
+		(instances
+			(project "flashlight-full-v1-1"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6953cb0-2713-480f-9476-7b1d8e288fbe"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
