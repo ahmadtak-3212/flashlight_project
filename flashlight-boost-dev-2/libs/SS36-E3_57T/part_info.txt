@@ -1,9 +1,0 @@
-Manufacturer=Vishay
-PartNumber=SS36-E3/57T
-PartCategory=Diode
-PackageCategory=Diodes Moulded
-PinCount=2
-Version=2.2
-Released=2017-01-19 21:22:06
-Downloaded=2025-02-27 16:59:15
-3D=Y

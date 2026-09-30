@@ -3,3 +3,8 @@
 **/.vscode/c_cpp_properties.json
 **/.vscode/launch.json
 **/.vscode/ipch/
+
+# private: budget, receipts, invoices (see docs/STRUCTURE.md)
+admin/
+# KiCad local history (its own git repo)
+**/.history/

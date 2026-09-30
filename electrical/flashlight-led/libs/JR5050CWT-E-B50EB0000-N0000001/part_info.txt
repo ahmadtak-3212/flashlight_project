@@ -1,0 +1,9 @@
+Manufacturer=CREE LED
+PartNumber=JR5050CWT-E-B50EB0000-N0000001
+PartCategory=LED
+PackageCategory=Other
+PinCount=3
+Version=1.3
+Released=2023-09-24 05:54:01
+Downloaded=2025-02-02 00:34:03
+3D=Y

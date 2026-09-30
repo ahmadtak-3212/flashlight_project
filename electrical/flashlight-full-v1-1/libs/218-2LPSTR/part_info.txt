@@ -1,0 +1,9 @@
+Manufacturer=CTS
+PartNumber=218-2LPSTR
+PartCategory=Switch
+PackageCategory=Other
+PinCount=4
+Version=1.4
+Released=2021-08-19 15:01:21
+Downloaded=2025-02-14 17:14:04
+3D=Y

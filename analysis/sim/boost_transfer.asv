@@ -1,0 +1,120 @@
+%% boost_cc_led_PI_stable.m
+% Small-signal averaged model of boost -> current sense -> PI -> PWM
+
+clear; clc; close all;
+
+%% ====== Power stage and sense parameters ===============================
+Vin      = 3;          % V, battery
+Vout_nom = 6;          % V, nominal LED voltage
+Iout_nom = 2;          % A, nominal LED current
+L        = 22e-6;      % H
+C        = 120e-6;     % F
+fsw      = 100e3;      % Hz (only for reference)
+Rload    = Vout_nom / Iout_nom;   % Ohm, LED as resistor
+
+Rsense      = 0.2;     % Ohm, current-sense resistor
+K_sense_amp = 0.5;     % sense amplifier gain (0–1 V range)
+
+%% ====== PI controller as hardware =====================================
+% We implement: G_PI(s) = Kp + Ki/s
+% with a series Rf-Cf in the feedback and an input resistor Rin:
+% Kp = Rf/Rin, Ki = 1/(Rin*Cf)
+
+Rin = 10e3;           % Ohm
+Rf  = 680;            % Ohm
+Cf  = 10e-6;         % F
+
+Kp  = Rf / Rin;
+Ki  = 1/(Rin * Cf);
+
+% (These values give roughly Kp = 0.5, Ki = 500 – stable for this plant.)
+
+%% ====== Linearized CCM boost converter model ===========================
+% Steady-state
+D   = 1 - Vin / Vout_nom;          % duty
+V_o = Vout_nom;
+I_o = V_o / Rload;
+I_L = Vin / (Rload * (1-D)^2);
+
+% ON:  diL/dt = Vin/L, dvC/dt = -vC/(R C)
+A1 = [ 0,                         0;
+       0,                -1/(Rload*C) ];
+
+% OFF: diL/dt = (Vin - vC)/L, dvC/dt = iL/C - vC/(R C)
+A2 = [ 0,                -1/L;
+       1/C,  -1/(Rload*C) ];
+
+% Duty-averaged A
+A = D*A1 + (1-D)*A2;
+
+% Duty perturbation input (Erickson/Maksimovic form)
+Bd = [ V_o / L;
+      -I_L / C ];
+
+% Sense output: Vmeas = K_sense_amp * Rsense * i_out, i_out ≈ vC/Rload
+C_vsense = [0, (Rsense*K_sense_amp)/Rload];   % 1×2
+D_vsense = 0;
+
+%% ====== Build loop in state space (add PI integrator state) ============
+K_pwm = 1;   % normalized PWM gain (0–1 V triangle & control)
+
+% States: [ x ; z ], x = [iL; vC], z = integrator state
+% x_dot = A x + Bd*K_pwm*(Kp*(r - y) + Ki*z)
+% z_dot = r - y,     y = C_vsense x
+%
+% => A_cl = [A - Bd*Kp*K_pwm*C,   Bd*Ki*K_pwm;
+%            -C_vsense,          0]
+
+A_cl = [A - Bd*Kp*K_pwm*C_vsense,  Bd*Ki*K_pwm;
+        -C_vsense,                0              ];
+
+B_cl = [Bd*Kp*K_pwm;
+        1          ];        % input is setpoint r
+
+C_y   = [C_vsense, 0];       % output y = Vmeas
+C_i   = C_y / (Rsense * K_sense_amp); % LED current (A) from Vmeas
+
+D_cl  = 0;
+
+% State-space systems
+sys_vsense = ss(A_cl, B_cl, C_y, D_cl);   % Vmeas / Vset
+sys_iout   = ss(A_cl, B_cl, C_i, D_cl);   % I_LED / Vset
+
+%% ====== Check poles and frequency response ============================
+fprintf('Closed-loop poles (Vset -> Vmeas):\n');
+disp(pole(sys_vsense));
+
+figure;
+bode(sys_iout);
+grid on;
+title('Closed-loop transfer: set-point \rightarrow LED current');
+
+%% ====== Time-domain step in set-point ==============================
+t_end   = 5e-3;                         % 5 ms
+t       = linspace(0, t_end, 2000);
+
+Vset_low  = 0.3;                        % starting set-value (0–1 V)
+Vset_high = 0.7;                        % final set-value
+t_step    = 1e-3;                       % step at 1 ms
+
+r = Vset_low * ones(size(t));
+r(t >= t_step) = Vset_high;
+
+[y_vsense, ~] = lsim(sys_vsense, r, t);
+y_iout        = lsim(sys_iout,   r, t);
+
+figure;
+subplot(2,1,1);
+plot(t*1e3, r, 'LineWidth', 1.5); hold on;
+plot(t*1e3, y_vsense, 'LineWidth', 1.5);
+ylabel('Voltage (V)');
+legend('V_{set}','V_{meas}','Location','Best');
+grid on;
+title('Set-point step and sensed feedback');
+
+subplot(2,1,2);
+plot(t*1e3, y_iout, 'LineWidth', 1.5);
+xlabel('Time (ms)');
+ylabel('I_{LED} (A)');
+grid on;
+title('LED current response to set-point step');

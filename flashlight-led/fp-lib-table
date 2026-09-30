@@ -1,6 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "JR5050CWT-E-B50EB0000-COOL")(type "KiCad")(uri "${KIPRJMOD}/libs/JR5050CWT-E-B50EB0000-N0000001")(options "")(descr ""))
-  (lib (name "JR5050CWT-E-B30EB0000-WARM")(type "KiCad")(uri "${KIPRJMOD}/libs/JR5050CWT-E-B30EB0000-N0000001")(options "")(descr ""))
-  (lib (name "C13600_CUTE-3-WW")(type "KiCad")(uri "${KIPRJMOD}/libs/C13600_CUTE-3-WW.pretty")(options "")(descr ""))
-)

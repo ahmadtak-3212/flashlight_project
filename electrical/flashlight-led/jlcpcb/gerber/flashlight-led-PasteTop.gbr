@@ -1,0 +1,52 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,8.0.8*%
+%TF.CreationDate,2025-02-06T20:07:43-05:00*%
+%TF.ProjectId,flashlight-led,666c6173-686c-4696-9768-742d6c65642e,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Paste,Top*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.8) date 2025-02-06 20:07:43*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 Aperture macros list*
+%AMRotRect*
+0 Rectangle, with rotation*
+0 The origin of the aperture is its center*
+0 $1 length*
+0 $2 width*
+0 $3 Rotation angle, in degrees counterclockwise*
+0 Add horizontal line*
+21,1,$1,$2,0,0,$3*%
+G04 Aperture macros list end*
+%ADD10R,4.358400X1.628400*%
+%ADD11R,4.958400X0.848400*%
+%ADD12RotRect,1.628400X4.358400X120.000000*%
+%ADD13RotRect,0.848400X4.958400X120.000000*%
+%ADD14RotRect,1.628400X4.358400X240.000000*%
+%ADD15RotRect,0.848400X4.958400X240.000000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,D1*%
+X161270000Y-90160000D03*
+X161270000Y-86680000D03*
+D11*
+X161270000Y-88420000D03*
+%TD*%
+D12*
+%TO.C,D2*%
+X154779999Y-102676885D03*
+X153040001Y-99663115D03*
+D13*
+X153910000Y-101170000D03*
+%TD*%
+D14*
+%TO.C,D3*%
+X169500002Y-99663116D03*
+X167759998Y-102676884D03*
+D15*
+X168630000Y-101170000D03*
+%TD*%
+M02*

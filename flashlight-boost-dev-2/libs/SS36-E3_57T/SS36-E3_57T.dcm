@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SS36-E3_57T
-D SS36-E3/57T, Schottky Diode,  3A max, 60V, 2-Pin, SMC
-K
-F https://componentsearchengine.com/Datasheets/2/SS36-E3_57T.pdf
-$ENDCMP
-#
-#End Doc Library

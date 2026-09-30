@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "JR5050CWT-E-B50EB0000-COOL")(type "KiCad")(uri "${KIPRJMOD}/libs/JR5050CWT-E-B50EB0000-N0000001/JR5050CWT-E-B50EB0000-N0000001.kicad_sym")(options "")(descr ""))
+  (lib (name "JR5050CWT-E-B30EB0000-WARM")(type "KiCad")(uri "${KIPRJMOD}/libs/JR5050CWT-E-B30EB0000-N0000001/JR5050CWT-E-B30EB0000-N0000001.kicad_sym")(options "")(descr ""))
+)

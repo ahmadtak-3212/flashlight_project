@@ -1,6 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "TPS61500PWPR")(type "KiCad")(uri "${KIPRJMOD}/libs/TPS61500PWPR/TPS61500PWPR.kicad_sym")(options "")(descr ""))
-  (lib (name "SS36-E3_57T")(type "KiCad")(uri "${KIPRJMOD}/libs/SS36-E3_57T/SS36-E3_57T.kicad_sym")(options "")(descr ""))
-  (lib (name "CDRH105RNP-100NC")(type "KiCad")(uri "${KIPRJMOD}/libs/CDRH105RNP-100NC/CDRH105RNP-100NC.kicad_sym")(options "")(descr ""))
-)
